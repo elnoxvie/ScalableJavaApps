@@ -1,6 +1,6 @@
 {
  "kind": "discovery#restDescription",
- "etag": "\"koCc_mmAOJe4d9CoedmJUnZeEcg/k6MYQNRkzwp0k1LTy4hnBwMMgLk\"",
+ "etag": "\"koCc_mmAOJe4d9CoedmJUnZeEcg/Sxct5wHhiDH21kgGGob1AuXzTMA\"",
  "discoveryVersion": "v1",
  "id": "helloworldendpoints:v1",
  "name": "helloworldendpoints",
@@ -106,6 +106,33 @@
    },
    "parameterOrder": [
     "name"
+   ],
+   "response": {
+    "$ref": "HelloClass"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "sayHelloByPeriod": {
+   "id": "helloworldendpoints.sayHelloByPeriod",
+   "path": "sayHelloByPeriod",
+   "httpMethod": "GET",
+   "parameters": {
+    "name": {
+     "type": "string",
+     "required": true,
+     "location": "query"
+    },
+    "period": {
+     "type": "string",
+     "required": true,
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "name",
+    "period"
    ],
    "response": {
     "$ref": "HelloClass"
